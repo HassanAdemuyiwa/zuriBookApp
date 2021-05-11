@@ -11,3 +11,7 @@ name:
 country:
 email:
 }
+
+Patch: "/users/:name"
+
+Delete: "/users/:name

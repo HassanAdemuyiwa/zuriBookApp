@@ -7,9 +7,9 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
-app.get("/users", mongo.getUsers);
+app.get("/", mongo.getUsers);
 
-app.post("/users", mongo.creatUser);
+app.post("/", mongo.creatUser);
 
 app.patch("/users/:name", mongo.updateUser);
 

@@ -1,8 +1,7 @@
 const { MongoClient } = require("mongodb");
-
+require('dotenv').config();
 const mongoPath =
-  "mongodb+srv://bookuser:ZajFOqHUwHnvdo85@zuritraining.v3mh6.mongodb.net/personDB?retryWrites=true&w=majority";
-
+  `mongodb+srv://bookuser:${process.env.DB_PASSWORD}@zuritraining.v3mh6.mongodb.net/personDB?retryWrites=true&w=majority`;
 
 //creat User
 
